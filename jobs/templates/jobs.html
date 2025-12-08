@@ -40,7 +40,7 @@
                                             {% endif %}
                                         </div>
                                         <div class="jobs_conetent">
-                                            <a href="job_details.html"><h4>{{job.title}}</h4></a>
+                                            <a href="{% url 'jobs:job_details' id=job.id %}"><h4>{{job.title}}</h4></a>
                                             <div class="links_locat d-flex align-items-center">
                                                 <div class="location">
                                                     <p> <i class="fa fa-map-marker"></i>{{job.location}}</p>
